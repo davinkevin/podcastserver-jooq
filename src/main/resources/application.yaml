@@ -1,0 +1,18 @@
+spring:
+ datasource:
+  continueOnError: true
+  driverClassName: org.h2.Driver
+  initialize: false
+  password: ''
+  url: jdbc:h2:/tmp/podcast-server
+  username: sa
+ h2:
+  console:
+   enabled: true
+ jooq:
+  sql-dialect: H2
+
+logging:
+ level:
+  org.jooq: DEBUG
+  com.github.davinkevin.poc.jooqdiscovery: DEBUG
